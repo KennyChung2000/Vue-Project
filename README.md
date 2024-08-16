@@ -8,7 +8,7 @@
 根據ｖｕｅ　教學影片練習，練習完成後修改為自己的前後端網站
 ## Resource:
 教學影片: https://learning.dcloud.io/#/?vid=4
-教學文章:https://blog.csdn.net/weixin_44351303/article/details/123751576
+教學文章:https://developer.mozilla.org/zh-CN/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_rendering_lists
 ## 開發工具:
 * VS Code:
     * Live Server
