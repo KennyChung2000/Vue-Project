@@ -1,23 +1,23 @@
 <script>
-import uniqueId from "lodash.uniqueid";
-export default {
-  props: {
-    label: { required: true, type: String },
-    done: { default: false, type: Boolean },
-  },
-  data() {
-    return {
-      isDone: this.done,
-      id: uniqueId("todo-"),
-    };
-  },
-};
-
-</script>
-<template>
-  <div>
-    <input type="checkbox" :id="id" :checked="isDone" />
-    <label>{{label}}</label>
+  import uniqueId from "lodash.uniqueid";
+  export default {
+    props: {
+      label: { required: true, type: String },
+      done: { default: false, type: Boolean },
+      name:{default: 'defaultName', type: String},
+      startDate:{default: 'defaultStartDate',type:String},
+      endDate:{default: 'defaultEndDate',type:String}
+    },
     
-  </div>
+  };
+</script>
+
+<template>
+  <tr>
+    <td ><input type="checkbox" :id="id" :checked="isDone" /></td>
+    <td ><label>{{label}}</label></td>
+    <td ><label>{{name}}</label></td>
+    <td ><label>{{startDate}}</label></td>
+    <td ><label>{{endDate}}</label></td>
+  </tr>
 </template>
